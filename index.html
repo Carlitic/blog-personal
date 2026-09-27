@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog personal técnico sobre desarrollo web, arquitectura frontend y ciberseguridad para la asignatura Diseño de Interfaces Web (DAW).">
+  <title>Blog Personal de Carlos Castaños</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <h1 class="site-title">Blog Personal de Carlos Castaños</h1>
+      </div>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#articulos">Artículos</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="https://github.com/Carlitic/blog-personal" target="_blank" rel="noopener noreferrer">Repositorio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="layout-container">
+    <main id="articulos" class="articles-feed">
+      <article class="card post-item">
+        <header class="post-header">
+          <div class="post-meta">
+            <time datetime="2026-03-20">20 de marzo de 2026</time>
+          </div>
+          <h2 class="post-title">
+            <a href="posts/cabeceras-http-seguridad.html">Cabeceras HTTP de Seguridad: Primera Línea Defensiva en el Navegador</a>
+          </h2>
+        </header>
+        <div class="post-excerpt">
+          <p>Configurar correctamente las directivas en el servidor previene vulnerabilidades críticas como XSS, Clickjacking e inyecciones. Analizamos el impacto de CSP, HSTS y directivas clave para proteger el cliente web.</p>
+        </div>
+        <footer class="post-footer">
+          <ul class="post-tags" aria-label="Etiquetas del artículo">
+            <li>#seguridad</li>
+            <li>#http</li>
+            <li>#defensiva</li>
+          </ul>
+          <a href="posts/cabeceras-http-seguridad.html" class="read-more-link">Leer artículo &rarr;</a>
+        </footer>
+      </article>
+
+      <article class="card post-item">
+        <header class="post-header">
+          <div class="post-meta">
+            <time datetime="2026-03-12">12 de marzo de 2026</time>
+          </div>
+          <h2 class="post-title">
+            <a href="posts/semantica-html5-accesibilidad.html">Semántica en HTML5 y Accesibilidad (a11y): Más Allá del Div</a>
+          </h2>
+        </header>
+        <div class="post-excerpt">
+          <p>El uso riguroso de elementos semánticos es la base para construir interfaces accesibles y comprensibles por lectores de pantalla. Repasamos cómo estructurar el árbol de accesibilidad sin caer en el Div Soup.</p>
+        </div>
+        <footer class="post-footer">
+          <ul class="post-tags" aria-label="Etiquetas del artículo">
+            <li>#html5</li>
+            <li>#a11y</li>
+            <li>#semantica</li>
+          </ul>
+          <a href="posts/semantica-html5-accesibilidad.html" class="read-more-link">Leer artículo &rarr;</a>
+        </footer>
+      </article>
+
+      <article class="card post-item">
+        <header class="post-header">
+          <div class="post-meta">
+            <time datetime="2026-02-28">28 de febrero de 2026</time>
+          </div>
+          <h2 class="post-title">
+            <a href="posts/optimizacion-css-rendimiento.html">Optimización de CSS: Arquitectura de Tokens y Reducción del Reflow</a>
+          </h2>
+        </header>
+        <div class="post-excerpt">
+          <p>En el diseño de interfaces web, el rendimiento de renderizado es vital. Exploramos cómo las variables CSS nativas y el manejo de propiedades compuestas garantizan 60 fps sin recargar el navegador.</p>
+        </div>
+        <footer class="post-footer">
+          <ul class="post-tags" aria-label="Etiquetas del artículo">
+            <li>#css</li>
+            <li>#rendimiento</li>
+            <li>#diw</li>
+          </ul>
+          <a href="posts/optimizacion-css-rendimiento.html" class="read-more-link">Leer artículo &rarr;</a>
+        </footer>
+      </article>
+    </main>
+
+    <aside id="sobre-mi" class="sidebar">
+      <section class="card author-card">
+        <h2 class="sidebar-title">Sobre mí</h2>
+        <div class="author-avatar" aria-hidden="true">&lt;/&gt;</div>
+        <p class="author-bio">Estudiante del ciclo formativo de <strong>Desarrollo de Aplicaciones Web (DAW)</strong>.</p>
+        
+        <h3 class="subsection-title">Enlaces de interés</h3>
+        <ul class="profile-links">
+          <li>
+            <a href="https://github.com/Carlitic" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+          </li>
+          <li>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+          </li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Carlos Castaños — Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

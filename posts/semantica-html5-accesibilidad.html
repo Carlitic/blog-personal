@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Semántica en HTML5 y pautas de accesibilidad web (WCAG): estructura del DOM y tecnologías de asistencia.">
+  <title>Semántica en HTML5 y Accesibilidad | Blog Personal de Carlos Castaños</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <p class="site-title"><a href="../index.html">Blog Personal de Carlos Castaños</a></p>
+      </div>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="../index.html#articulos">Artículos</a></li>
+          <li><a href="../index.html#sobre-mi">Sobre mí</a></li>
+          <li><a href="https://github.com/Carlitic/blog-personal" target="_blank" rel="noopener noreferrer">Repositorio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="layout-container layout-single">
+    <main class="articles-feed">
+      <nav class="back-nav" aria-label="Ruta de navegación">
+        <a href="../index.html" class="back-link">&larr; Volver al inicio</a>
+      </nav>
+
+      <article class="card article-detail">
+        <header class="post-header">
+          <div class="post-meta">
+            <time datetime="2026-03-12">12 de marzo de 2026</time>
+          </div>
+          <h1 class="post-title">Semántica en HTML5 y Accesibilidad (a11y): Más Allá del Div</h1>
+        </header>
+
+        <div class="article-body">
+          <p>El uso riguroso de elementos semánticos de HTML5 no es solo una buena práctica de maquetación estética; es el pilar para construir interfaces accesibles y optimizadas tanto para usuarios de tecnologías de asistencia como para indexadores web.</p>
+
+          <h3>1. El problema del "Div Soup"</h3>
+          <p>La proliferación indiscriminada de contenedores <code>&lt;div&gt;</code> sin valor semántico destruye el árbol de accesibilidad del navegador. Los lectores de pantalla no pueden inferir jerarquías ni regiones clave si todo el contenido se presenta dentro de divisiones genéricas.</p>
+
+          <h3>2. Regiones semánticas principales</h3>
+          <p>HTML5 introduce etiquetas que poseen roles ARIA implícitos nativos, haciendo innecesaria la sobrecarga de atributos manuales:</p>
+          <ul>
+            <li><code>&lt;header&gt;</code>: Representa el encabezado introductorio de una página o sección.</li>
+            <li><code>&lt;nav&gt;</code>: Contenedor explícito de navegación. Permite al usuario de teclado o lector de pantalla saltar directamente a los enlaces.</li>
+            <li><code>&lt;main&gt;</code>: Contenido primario y único del documento (solo debe existir uno por página).</li>
+            <li><code>&lt;article&gt;</code>: Contenido autónomo y reutilizable de manera independiente (como una entrada de blog o noticia).</li>
+            <li><code>&lt;aside&gt;</code>: Información tangencialmente relacionada con el contenido principal (biografía, enlaces laterales, índices).</li>
+          </ul>
+
+          <h3>3. Navegación por teclado y foco visible</h3>
+          <p>Una interfaz verdaderamente usable debe asegurar que todo elemento interactivo (<code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>) sea alcanzable mediante tabulación y conserve un indicador visual claro (<code>:focus-visible</code>), sin eliminarse nunca por motivos meramente visuales.</p>
+        </div>
+
+        <footer class="post-footer">
+          <ul class="post-tags" aria-label="Etiquetas del artículo">
+            <li>#html5</li>
+            <li>#a11y</li>
+            <li>#semantica</li>
+          </ul>
+        </footer>
+      </article>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Carlos Castaños — Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
