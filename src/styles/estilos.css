@@ -362,7 +362,8 @@ code {
   margin-bottom: 0.5rem;
 }
 
-.code-block {
+.code-block,
+pre.astro-code {
   background-color: var(--color-code-bg);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius-md);
@@ -376,7 +377,8 @@ code {
   -webkit-overflow-scrolling: touch;
 }
 
-.code-block code {
+.code-block code,
+pre.astro-code code {
   background-color: transparent;
   border: none;
   padding: 0;
@@ -561,7 +563,8 @@ code {
     gap: 0.75rem;
   }
 
-  .code-block {
+  .code-block,
+  pre.astro-code {
     font-size: 0.825rem;
     padding: 0.75rem;
     -webkit-overflow-scrolling: touch;

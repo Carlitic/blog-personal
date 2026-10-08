@@ -1,0 +1,26 @@
+{
+  "name": "blog-personal",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
+    "start": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
+    "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carlitic/blog-personal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carlitic/blog-personal/issues"
+  },
+  "homepage": "https://github.com/Carlitic/blog-personal#readme",
+  "dependencies": {
+    "astro": "^7.3.7"
+  }
+}

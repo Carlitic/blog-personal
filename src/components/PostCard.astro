@@ -1,0 +1,38 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  slug: string;
+}
+
+const { title, description, pubDate, slug } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+const postUrl = `${baseUrl}/posts/${slug}`;
+
+const formattedDate = new Intl.DateTimeFormat('es-ES', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+}).format(pubDate);
+
+const isoDate = pubDate.toISOString().split('T')[0];
+---
+
+<article class="card post-item">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime={isoDate}>{formattedDate}</time>
+    </div>
+    <h2 class="post-title">
+      <a href={postUrl}>{title}</a>
+    </h2>
+  </header>
+  <div class="post-excerpt">
+    <p>{description}</p>
+  </div>
+  <footer class="post-footer">
+    <a href={postUrl} class="read-more-link">Leer artículo &rarr;</a>
+  </footer>
+</article>
