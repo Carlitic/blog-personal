@@ -6,7 +6,7 @@ pubDate: 2026-03-20
 
 Configurar correctamente las directivas en la respuesta HTTP del servidor web o CDN previene vectores de ataque críticos como Cross-Site Scripting (XSS), Clickjacking, robo de tokens de sesión e inyecciones de contenido malicioso.
 
-### 1. Content Security Policy (CSP)
+### 1. Content Security Policy (CSP) 
 
 La cabecera `Content-Security-Policy` restringe de forma declarativa qué orígenes y recursos (scripts, imágenes, estilos, conexiones WebSocket) pueden ser ejecutados por el cliente:
 
